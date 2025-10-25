@@ -1,0 +1,342 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #ebd9d9;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.formulário {
+  max-width: 600px;
+  margin: 2rem auto 4rem;
+  padding: 2rem calc(1.5rem * var(--font-scale));
+  background-color: #fdfdfd;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.campo {
+  border: 1.5px solid var(--primary-color);
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem 2rem;
+}
+
+.legenda {
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.nomes {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+select {
+  text-align-last: center;
+  background-color: #fff;
+  color: #000;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: #fff;
+}
+
+select option:checked {
+  background-color: transparent;
+  color: #000;
+}
+
+.estrelas input[type="radio"] {
+  display: none;
+}
+
+.estrelas label {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  filter: drop-shadow(0 0 1px black);
+}
+
+.estrelas input[type="radio"]:checked~label,
+.estrelas label:hover,
+.estrelas label:hover~label {
+  color: #FFCC00;
+}
+
+.estrelas {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 2rem;
+  display: inline-flex;
+  gap: 0.1rem;
+  user-select: none;
+  position: relative;
+}
+
+.estrelas input[type="radio"] {
+  display: none;
+}
+
+.estrelas label {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  filter: drop-shadow(0 0 1px black);
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao5 {
+  display: block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao4 {
+  display: block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao3 {
+  display: block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao2 {
+  display: block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao1 {
+  display: block;
+}
+
+.descricao p {
+  display: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+#descricao5 {
+  color: var(--accent-color);
+}
+
+/* Muito bom */
+#descricao4 {
+  color: #32cd32;
+}
+
+/* Bom */
+#descricao3 {
+  color: #9c9254;
+}
+
+/* Razoável */
+#descricao2 {
+  color: #ff8c00;
+}
+
+/* Ruim */
+#descricao1 {
+  color: #ff0000;
+}
+
+/* Péssimo */
+
+
+.estrelas input[type="radio"]:checked~.descricao #descricao5 {
+  display: inline-block;
+}
+
+
+.estrelas input[type="radio"]:checked~.descricao #descricao4 {
+  display: inline-block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao3 {
+  display: inline-block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao2 {
+  display: inline-block;
+}
+
+.estrelas input[type="radio"]:checked~.descricao #descricao1 {
+  display: inline-block;
+}
+
+
+.botao {
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 1rem;
+}
+
+
+.botao button {
+  background-color: #452158;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.botao button:hover {
+  background-color: #452158;
+}
+
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .form-col {
+    flex: 1 1 100%;
+  }
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 2rem calc(1.5rem * var(--font-scale));
+  background-color: var(--base-variant);
+  border-radius: 0.8rem;
+    box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  box-sizing: border-box;
+}
+
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .form-col {
+    flex: 1 1 100%;
+  }
+}
+
+form {
+  border: none;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+ box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+}
+
+.botao button:hover {
+  background-color: rgb(103, 34, 138);
+  transform: scale(1.05);
+  transition: all 0.3s ease; 
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.estrelas label {
+  font-size: 2.5rem;
+  margin-right: 0.2rem;
+}
+
+select {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}

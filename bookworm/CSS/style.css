@@ -1,0 +1,401 @@
+body {
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin: 0;
+  color: #000000;
+  background-color: #f0f1ec;
+}
+
+h1 {
+  font-size: 36px;
+  color: #000000;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+h2 {
+  font-size: 27px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+}
+
+section,
+footer {
+  margin: 40px;
+}
+
+nav li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 10px;
+}
+
+nav {
+  font-size: 20px;
+  letter-spacing: 4px;
+  height: 100px;
+  background-color: #452158;
+  padding-left: 40px;
+}
+
+ul li a:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+}
+
+p {
+  text-align: center;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  height: 80px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.logo {
+  margin-right: auto;
+  position: relative;
+  top: -45px;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #452158;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s, transform 0.25s, background 0.25s;
+  z-index: 9999;
+}
+
+.btn-topo:hover {
+  background: #250318;
+}
+
+.btn-topo.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer .social-icon,
+footer .social-icon i {
+  text-decoration: none;
+  /* remove sublinhado */
+  border: none;
+  /* remove borda se houver */
+  outline: none;
+  /* remove outline que pode aparecer */
+}
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.imagem {
+  width: 50%;
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  overflow: cover;
+}
+
+.texto {
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .carrossel {
+    height: auto;
+  }
+
+  .slide {
+    flex-direction: column;
+  }
+
+  .imagem,
+  .texto {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+footer {
+  background-color: #452158;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  position: absolute;
+  margin-top: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+  display: flex;
+  justify-content: right;
+}
+
+.menu li {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #452158;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  border-radius: 0 0 8px 8px;
+  z-index: 11;
+  min-width: 100%;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: white;
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: #75c0d9;
+  min-width: 144px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+#autores {
+  color: #3f0227;
+  text-align: center;
+}
+
+.titulo-categoria {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #b69528;
+  letter-spacing: 2px;
+  width: 100%;
+  border-bottom: 3px solid #b69528;
+  padding-bottom: 10px;
+}
+
+H6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+}
+
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  /* faz quebrar linha em telas menores */
+}
+
+.card-ideias {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card-ideias:hover {
+  transform: translateY(-5px);
+}
+
+.card-ideias .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card-ideias h3 {
+  color: #6b2f2f;
+  /* cor parecida com a do header */
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.card-ideias p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  /* ocupa toda a largura */
+  box-sizing: border-box;
+}
+
+.submenu li a:hover,
+.submenu li a:focus {
+  background-color: transparent;
+  color: gold;
+  overflow: hidden;
+}
+
+.bg-purple-dark {
+  background-color: #452158 !important;
+}
+
+.text-purple-dark {
+  color: #452158 !important;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ccc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenu li a {
+  display: block; /* faz o link ocupar toda a área do item */
+  overflow: hidden; /* corta qualquer parte da listra que saia do link */
+  position: relative; /* garante que o ::after fique dentro do link */
+}
+
+.menu li a:hover {
+  color: gold;
+  border-bottom: none;
+}

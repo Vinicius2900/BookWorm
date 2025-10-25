@@ -1,0 +1,163 @@
+.infopequeno {
+  background: #f0ecec;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #d7bde2, 0 0 12px #d7bde2;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.infopequeno:hover {
+  box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  transform: translateY(-4px);
+}
+
+.infopequeno img {
+  display: block;
+  border-radius: 8px;
+  width: 260px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* CARD GRANDE */
+.cardgrande {
+  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #f0ecec;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #d7bde2, 0 0 12px #d7bde2;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  max-width: 90%;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cardgrande:hover {
+  box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  transform: translateY(-4px);
+}
+
+/* GRID DE INDICAÇÕES */
+.linha-indicação {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* TÍTULOS */
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LINKS */
+.cardgrande a,
+.infopequeno a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CARD AUTORES */
+.card-autores {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card-a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #d7bde2, 0 0 12px #d7bde2;
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-a:hover {
+  box-shadow: 0 0 18px #c49dd9, 0 0 18px #c49dd9;
+  transform: translateY(-4px);
+}
+
+/* ALINHAMENTO DE IMAGENS */
+.card-a:nth-child(odd) .imagem {
+  order: 1;
+}
+
+.card-a:nth-child(even) .imagem {
+  order: 2;
+}
+
+.imagem img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.descricao {
+  flex: 1;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.cardgrande img {
+  max-width: 100%;
+  height: 470px;
+  border-radius: 8px;
+}
+
+p {
+  color: #4b4a4a;
+}
+
+/* RODAPÉ */
+footer p {
+  color: white;
+}
+
+.container p {
+  font-size: 18px;
+}
+
+.card-a .imagemesquerda {
+  margin-right: 20px;
+}
+
+.card-a .imagemdireita {
+  margin-left: 20px;
+}
+
+.card-a img {
+  border-radius: 15px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.card-a {
+  border-radius: 15px;
+}
